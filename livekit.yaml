@@ -1,0 +1,20 @@
+# Genere a la preparation. Le SFU n'ecoute qu'en boucle locale: le son et
+# l'image des appels ne sortent pas de la machine.
+port: 47754
+bind_addresses:
+  - 127.0.0.1
+
+rtc:
+  tcp_port: 47755
+  port_range_start: 47760
+  port_range_end: 47790
+  use_external_ip: false
+
+keys:
+  althaeion: 072e64a75330550d74ad39fa435a2732da63dffb071dd95894e16fdde6dd07ea
+
+logging:
+  level: warn
+
+# Rien n'est rapporte a personne.
+development: false
